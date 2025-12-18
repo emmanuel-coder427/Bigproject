@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Emlah 💚</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #0b3d2e;
+      color: #e6f4ea;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* FLOATING HEARTS */
+    .heart {
+      position: fixed;
+      bottom: -20px;
+      font-size: 20px;
+      animation: floatUp 6s linear infinite;
+      color: #b7e4c7;
+      opacity: 0.8;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-110vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    header {
+      background: linear-gradient(rgba(11,61,46,0.85), rgba(11,61,46,0.85)),
+        url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      animation: fadeIn 3s;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+      animation: fadeIn 4s;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #b7e4c7;
+    }
+
+    .card {
+      background-color: #145a32;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      margin-bottom: 30px;
+      animation: fadeIn 2s;
+    }
+
+/* GALLERY IMAGES ONLY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 500px;       /* keeps all images the same height */
+  object-fit: cover;   /* crops images nicely to fit frame */
+  border-radius: 15px; /* rounded corners for elegance */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* gentle zoom on hover */
+}
+
+
+
+  
+
+
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #092d22;
+      font-size: 0.9rem;
+    }
+
+    /* MUSIC BUTTON */
+    .music-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #145a32;
+      color: #e6f4ea;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 14px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- BACKGROUND MUSIC -->
+  
+<!-- Hidden YouTube player -->
+<div id="youtubePlayer" style="display:none;">
+  <iframe id="ytIframe" width="0" height="0" 
+    src="https://www.youtube.com/embed/bON3NQHugSs?enablejsapi=1&autoplay=0" 
+    title="Tarrus Riley - She's Royal" frameborder="0" allow="autoplay"></iframe>
+</div>
+
+  <button class="music-btn" onclick="toggleMusic()">🎶 Music</button>
+
+  <!-- HOME -->
+  <header>
+    <h1>My Emlah 💚</h1>
+    <p>
+      Like the forest, your love is calm, strong, and endlessly beautiful.
+    </p>
+  </header>
+
+  <!-- ABOUT HER -->
+  <section>
+    <h2>About You</h2>
+    <div class="card">
+      <p>
+        Emlah, you are my peace and my happiness.  
+        Your kindness, your smile, and your heart make my world brighter every day.
+        Being with you feels like standing in a quiet forest — safe, warm, and alive.
+      </p>
+    </div>
+  </section>
+<!-- OUR STORY -->
+<section>
+  <h2>Until We Meet 💚</h2>
+  <div class="card">
+    <p>
+      We may not have met in person yet,  
+      but somehow babe you have always feelt so close to my heart.
+    </p>
+
+    <p>
+      Every call, every message, every laugh we share especially babe your Laughter  
+      has become a memory I treasure deeply.
+      Distance has never stopped me from feeling your warmth,
+      your care, and your love no matter how things get tough between us
+    </p>
+
+    <p>
+      One day, I will look into your eyes,
+      hold your hand, and smile knowing that
+      everything we built from afar was real.
+    </p>
+
+    <p>
+      Until that day comes,  
+      know this — my heart already knows you,  
+      and it chooses you, always.
+    </p>
+  </div>
+</section>
+<!-- GALLERY -->
+  <section>
+    <h2>The Memories I hold and admire about you My Emlah</h2>
+     <p>
+      what more can I say about these memories as I quote a word from the great Jamaican singer, Tarrus Riley: "what a natural beauty no need no make up to be a cutie"
+    </p>
+    <div class="gallery">
+      <!-- Replace image links with your own photos -->
+      <img src="img/WhatsApp Image 2025-12-18 at 14.25.59.jpeg">
+      <img src="img/WhatsApp Image 2025-12-18 at 14.23.52.jpeg">
+      <img src="img/WhatsApp Image 2025-12-18 at 14.25.35.jpeg">
+      
+    </div>
+  </section>
+ 
+
+  <!-- LOVE LETTER -->
+  <section>
+    <h2>My Message to You My Emlah</h2>
+    <div class="card">
+      <p>
+        I made this website just for you, Emlah.  
+        To remind you how deeply you are loved and appreciated.
+        No matter where life takes us, my heart chooses you — always.
+      </p>
+      <p>I love you 💚</p>
+    </div>
+  </section>
+
+  <footer>
+    Made with love 💚, Your Man
+  </footer>
+
+  <script>
+  
+  let isPlaying = false;
+  const iframe = document.getElementById("ytIframe");
+
+  function toggleMusic() {
+    if (!isPlaying) {
+      // Play the song by adding autoplay
+      iframe.src = "https://www.youtube.com/embed/bON3NQHugSs?autoplay=1";
+      isPlaying = true;
+    } else {
+      // Stop the song by resetting src
+      iframe.src = "https://www.youtube.com/embed/bON3NQHugSs?autoplay=0";
+      isPlaying = false;
+    
+    }
+}
+
+    /* FLOATING HEARTS */
+    setInterval(() => {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.innerHTML = "💚";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = Math.random() * 20 + 15 + "px";
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 6000);
+    }, 500);
+  </script>
+
+</body>
+</html>
